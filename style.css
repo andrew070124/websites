@@ -1,0 +1,138 @@
+ul{
+    list-style: none;
+    padding-left:0;
+}
+
+body{
+    text-align: center;
+    margin:0px;
+    border: 5px dotted black;
+}
+
+#name{
+    color:red;
+    font-family: "Edwardian Script ITC";
+    text-align: right;
+    font-size: 50px;
+    padding-right: 30px;
+    padding-bottom:17px;
+    border-bottom: 5px dotted black;
+    margin-bottom:0;
+    margin-top:0
+}
+
+h1{
+    font-size: 70px;
+    margin-bottom:10px;
+}
+
+h2{
+    font-size: 35px;
+    margin-bottom: 10px;
+    margin-top: 18px;
+}
+
+h3{
+    font-size:28px;
+    margin-bottom:10px;
+}
+
+h1,h2,h3{
+    font-family: "BM YEONSUNG";
+}
+
+.red{
+    color:red;
+}
+li{
+    font-family:"Binggrae Melona";
+    font-size:25px;
+    margin-top:25px;
+    margin-bottom:5px;
+    color:white;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom:25px;
+    background-color:gray
+}
+
+.mainpagegrid{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-bottom:25px;
+    background-color:gray
+}
+
+.firstgrid{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.secondgrid{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+@media(max-width:900px){
+    .mainpagegrid{
+        display:block;
+    }
+}
+
+@media(max-width:1200px){
+    .grid{
+        display:block;
+        padding-top:1px;
+        padding-bottom:11px;
+    }
+
+    #secondul{
+        margin-top:0;
+        margin-bottom:16px;
+    }
+    #firstul{
+        margin-bottom:0;
+        margin-top:16px;
+    }
+    #name{
+        border:none;
+        padding-bottom:10px;
+    }
+}
+
+@media(max-width:650px){
+    .firstgrid{
+        display:block;
+    }
+
+    .secondgrid{
+        display:block;
+    }
+}
+
+#firstul{
+    margin-bottom: 0;
+    padding-top: 1px;
+}
+
+#secondul{
+    padding-bottom:26px;
+}
+
+#firstul, #secondul, #thirdul{
+    margin:0;
+    margin-bottom:16px;
+}
+
+#thirdul{
+    margin:0;
+}
+
+.green{
+    color: green;
+}
+
+
