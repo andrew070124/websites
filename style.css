@@ -55,14 +55,12 @@ li{
 .grid{
     display:grid;
     grid-template-columns: 1fr 1fr;
-    margin-bottom:25px;
     background-color:gray
 }
 
 .mainpagegrid{
     display:grid;
     grid-template-columns: 1fr 1fr 1fr;
-    margin-bottom:25px;
     background-color:gray
 }
 
@@ -91,7 +89,6 @@ li{
 
     #secondul{
         margin-top:0;
-        margin-bottom:16px;
     }
     #firstul{
         margin-bottom:0;
@@ -124,7 +121,6 @@ li{
 
 #firstul, #secondul, #thirdul{
     margin:0;
-    margin-bottom:16px;
 }
 
 #thirdul{
