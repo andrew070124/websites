@@ -1,63 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
 ul{
     list-style: none;
     padding-left:0;
 }
 
 body{
+    box-sizing: border-box;
     text-align: center;
-    margin:0px;
-    border: 5px dotted black;
+    /* border: 5px dotted black; */
     font-family: 'Jua', sans-serif;
+    margin:0 auto;
+    background-color:white;
 }
 
 #name{
     color:red;
-    text-align: right;
-    font-size: 50px;
-    padding-right: 75px;
+    text-align: center;
+    font-size: 1.5rem;
+    padding-right: 6rem;
     padding-bottom:17px;
-    border-bottom: 5px dotted black;
     margin-bottom:0;
     margin-top:0
 }
 
 h1{
-    font-size: 4rem;
-    margin-bottom:10px;
+    margin-top:3rem !important;
+    font-size: 2.5rem;
 }
 
 h2{
-    font-size: 35px;
-    margin-bottom: 10px;
-    margin-top: 18px;
+    font-size: 2rem;
 }
 
 h3{
-    font-size:28px;
-    margin-bottom:10px;
+    font-size:1.75rem;
+}
+
+h1, h2, h3{
+    color:black;
+    font-weight:100;
+    margin:1rem;
 }
 
 
 .red{
-    color:red;
+    color:blue;
 }
 li{
     font-size:25px;
     margin-top:25px;
     margin-bottom:5px;
     color:white;
+    font-weight: lighter;
 }
 
 .grid{
     display:grid;
     grid-template-columns: 1fr 1fr;
-    background-color:gray
+    background-color:gray;
+    margin-bottom:0.5em;
+    max-width: 1500px;
+    margin:0 auto;
 }
 
 .mainpagegrid{
     display:grid;
     grid-template-columns: 1fr 1fr 1fr;
-    background-color:gray
+    background-color:gray;
+    margin-bottom:0.5em;
 }
 
 .firstgrid{
@@ -70,9 +80,12 @@ li{
     grid-template-columns: 1fr 1fr;
 }
 
-@media(max-width:900px){
+@media(max-width:992px){
     .mainpagegrid{
         display:block;
+    }
+    #name{
+        border:none;
     }
 }
 
@@ -81,6 +94,8 @@ li{
         display:block;
         padding-top:1px;
         padding-bottom:11px;
+        margin: 0 auto;
+        max-width: 1000px;
     }
 
     #secondul{
@@ -91,7 +106,6 @@ li{
         margin-top:16px;
     }
     #name{
-        border:none;
         padding-bottom:10px;
     }
 }
@@ -103,6 +117,11 @@ li{
 
     .secondgrid{
         display:block;
+    }
+
+    .grid{
+        margin: 0 auto;
+        max-width: 540px;
     }
 }
 
@@ -127,4 +146,36 @@ li{
     color: green;
 }
 
+@media screen and (max-width: 600px) {
+    html {
+      font-size: 10px;
+    }
+      .title {
+          font-size: 2rem;
+      }
+  }
+  
+  .navbar-light .navbar-brand {
+    line-height: 1.68;
+    text-align: left;
+    color: #35465d; 
+  }
+  
+  .navbar-light .navbar-toggler {
+      border-color: #ffffff;
+  }
 
+  .nav-link{
+      font-size:1rem;
+  }
+
+  .nav-item{
+      margin-top: 0.05em;
+      text-align:left;
+  }
+
+  .up{
+      margin-top: 0.5em;
+  }
+
+  
