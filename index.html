@@ -17,49 +17,75 @@
         <meta property="og:description" content="일일이 직접 찾아가기 힘든 우리가 웹사이트를 개발할 때 꼭 필요한 github netlify 같은 사이트를 모아놔 편하게 갈수 있게 해주는 사이트 입니다. 또 여러 재밌는 사이트들도 모아놨으니 한번씩 방문해 주세요!">
 </head>
 
-<body>
-    <nav class="navbar navbar-expand-lg navbar-light container">
-        <a class="navbar-brand white" href="https://www.goodsites.ml">유용한 사이트 모음</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item active">
-              <a class="nav-link" href="https://www.goodsites.ml">유용한 사이트 모음<span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item active">
-              <a class="nav-link" href="https://animalfacetest.ml/">동물상 테스트</a>
-            </li>
-            <li class="nav-item active">
-              <a class="nav-link" href="https://movierole.ml/">영화역할 테스트</a>
-            </li>
-            <li class="nav-item active">
-                <a class="nav-link" href="https://www.youtube.com/channel/UCpL3_4LOVsjo9MCCuu79sZg">Andrew 유튜브 채널</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
+<body>  
+  <nav class="navbar navbar-expand-lg navbar-light container">
+      <a class="navbar-brand white" href="https://www.goodsites.ml">유용한 사이트 모음</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link first" href="https://www.goodsites.ml" >유용한 사이트  모음</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link second" href="https://animalfacetest.ml/">동물상 테스트</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link third" href="https://movierole.ml/">영화역할 테스트</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link fourth" href="https://www.youtube.com/channel/UCpL3_4LOVsjo9MCCuu79sZg">Andrew 유튜브 채널</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
     <h1>유용한 사이트 모음</h1>
     <h2>여러가지 생활속 유용한 사이트 모음</h2>
+    <input id="button" type="button" value="야간 모드" onclick="
+      document.querySelector('body').style.backgroundImage ='url(dark.jpg)';
+      document.querySelector('h1').style.color = 'white'; 
+      document.querySelector('h2').style.color = 'white';
+      document.querySelector('#night').style.color = 'white';
+      document.querySelector('.white').style.color = 'white';
+      document.querySelector('.navbar-brand').style.color = 'white';
+      document.querySelector('.first').style.color = 'white';
+      document.querySelector('.second').style.color = 'white';
+      document.querySelector('.third').style.color = 'white';
+      document.querySelector('.fourth').style.color = 'white';
+      document.querySelector('.navbar-toggler').style.borderWeight = '20px';
+    ">
+    <input id="button" type="button" value="낮 모드" onclick="
+      document.querySelector('body').style.backgroundImage ='url(website.jpg)';
+      document.querySelector('h1').style.color = 'black'; 
+      document.querySelector('h2').style.color = 'black';
+      document.querySelector('#night').style.color = 'black';
+      document.querySelector('.white').style.color = '#35465d';
+      document.querySelector('.navbar-brand').style.color = '#35465d';
+      document.querySelector('.first').style.color = 'black';
+      document.querySelector('.second').style.color = 'black';
+      document.querySelector('.third').style.color = 'black';
+      document.querySelector('.fourth').style.color = 'black';
+    ">
     <p id="name" class="container mt-3 youtube-cover d-flex flex-row-reverse align-items-center"><u>By Andrew</u></p>
-    <h3><span class="red"><u>사진을 클릭</u></span>하세요!</h3>
-    <h3><span class="green"><u>사이트 추가 문의 댓글</u></span>은 아래로!</h3>
-    
+    <div id="night">
+      <h3><span class="green"><u>사이트 추가 문의 댓글</u></span>은 아래로!</h3>
+      <h3><span class="red"><u>사진을 클릭</u></span>하세요!</h3>
+    </div>
     <div class="mainpagegrid container">
         <ul id="firstul">
             <li>웹 개발 사이트</li>
             <a href="웹개발사이트.html"><image src="사진/coding.jpg" width="300px"></a>
         </ul>
         <ul id="thirdul">
+          <li>방송 사이트</li>
+          <a href="방송사이트.html"><image src="사진/game.jpg" width="300px"></a>
+      </ul>
+        <ul id="secondul">
             <li>내가 만든 사이트들</li>
             <a href="내가만든사이트.html"><image src="사진/make.jpg" width="300px"></a>
         </ul>
-        <ul id="secondul">
-            <li>오락거리 사이트</li>
-            <a href="오락거리사이트.html"><image src="사진/game.jpg" width="300px"></a>
-        </ul>
-    </div>
+      </div>
         <div id="disqus_thread" class="container"></div>
         <script>
     
