@@ -43,7 +43,9 @@
     <h1>유용한 사이트 모음</h1>
     <h2>여러가지 생활속 유용한 사이트 모음</h2>
     <input id="button" type="button" value="야간 모드" onclick="
-      document.querySelector('body').style.backgroundImage ='url(dark.jpg)';
+    var body = document.querySelector('body')
+    if(this.value === '야간 모드'){
+      body.style.backgroundImage ='url(dark.jpg)';
       document.querySelector('h1').style.color = 'white'; 
       document.querySelector('h2').style.color = 'white';
       document.querySelector('#night').style.color = 'white';
@@ -53,10 +55,9 @@
       document.querySelector('.second').style.color = 'white';
       document.querySelector('.third').style.color = 'white';
       document.querySelector('.fourth').style.color = 'white';
-      document.querySelector('.navbar-toggler').style.borderWeight = '20px';
-    ">
-    <input id="button" type="button" value="낮 모드" onclick="
-      document.querySelector('body').style.backgroundImage ='url(website.jpg)';
+      document.querySelector('#button').value = '낮 모드';
+    } else {
+      body.style.backgroundImage ='url(website.jpg)';
       document.querySelector('h1').style.color = 'black'; 
       document.querySelector('h2').style.color = 'black';
       document.querySelector('#night').style.color = 'black';
@@ -66,7 +67,10 @@
       document.querySelector('.second').style.color = 'black';
       document.querySelector('.third').style.color = 'black';
       document.querySelector('.fourth').style.color = 'black';
-    ">
+      document.querySelector('#button').value = '야간 모드';
+    }
+  ">
+
     <p id="name" class="container mt-3 youtube-cover d-flex flex-row-reverse align-items-center"><u>By Andrew</u></p>
     <div id="night">
       <h3><span class="green"><u>사이트 추가 문의 댓글</u></span>은 아래로!</h3>
